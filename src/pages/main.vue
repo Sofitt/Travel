@@ -11,7 +11,7 @@
     <brands></brands>
     <subscribe></subscribe>
     <Footer></Footer>
-    <!--      <span class="Copyrights">All rights reserved@jadoo.com</span>-->
+          <span class="Copyrights">All rights reserved@jadoo.com</span>
   </div>
 </div>
 </template>
