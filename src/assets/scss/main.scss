@@ -1,0 +1,73 @@
+@import "null.scss";
+@import "style.scss";
+@import "icon.scss";
+@import "animation";
+@import "btn-drp.scss";
+@import "container.scss";
+
+.main {
+
+  &__background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1000;
+max-width: 100%;
+    ;
+  }
+}
+
+.link {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color;
+}
+
+.title {
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0px 0px 60px 0px;
+  text-transform: capitalize;
+
+  font-family: "Volkhov";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+
+
+  @media (max-width: $md1+px) {
+    text-align: center !important;
+  }
+  @media (max-width: 534px) {
+    font-size: 45px !important;
+  }
+  @media (max-width: 352px) {
+    font-size: 40px !important;
+    margin: 0px 0px 20px 0px;
+  }
+  @media (max-width: 350px) {
+    font-size: 35px !important;
+  }
+}
+
+.card__header {
+  color: rgba(30, 29, 76, 1);
+}
