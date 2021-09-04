@@ -1,16 +1,26 @@
-# travel
+# Travel
 
-## Project setup
+В проекте использованы следующие технологии:
+- Vue
+- Vue Router
+- Scss
+- Pixel perfect (осталось добавить задники в виде украшений) - файл Figma, с которого всё версталось лежит в проекте.
+- JS
+
+Проект я делал не так давно, но с тех пор всё равно сильно вырос и сверстал бы его как минимум быстрее. (часа за 22)
+
+## Установка проекта
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция для разработки
 ```
 npm run serve
+open http://localhost:8080/
 ```
 
-### Compiles and minifies for production
+### Компиляция для продакшена
 ```
 npm run build
 ```
@@ -19,6 +29,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
