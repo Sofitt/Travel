@@ -110,6 +110,7 @@ export default {
     flex-flow: column;
     align-items: center;
     height: auto;
+    margin-bottom: 40px;
   }
   // Footer logo
   &__first {
@@ -163,6 +164,7 @@ export default {
     }
 
     > .Footer__block {
+      align-items: center;
       @media (max-width: $md1+px) {
         align-items: center;
         margin: 0px 0px 30px 0px;

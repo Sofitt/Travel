@@ -9,11 +9,13 @@
       <p class="sub__titleMob">Subscribe to get interesting offers</p>
       <p class="sub__title">Subscribe to get information, latest news and other
         interesting offers about Cobham</p>
+      <form action="">
       <label class="sub__form">
         <img src="../../assets/svg/mail.svg" alt="" class="sub__inputImg">
         <input type="email" placeholder="Your email" class="sub__input">
         <button class="sub__btn link" type="submit">Subscribe</button>
       </label>
+      </form>
     </div>
   </div>
 </template>
