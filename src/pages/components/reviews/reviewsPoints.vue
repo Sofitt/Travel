@@ -5,7 +5,7 @@
 <script>
 export default {
   name: "reviewsPoints",
-  props: ['activeElem', 'index'],
+  props: ['index'],
   components: {},
   data: function () {
     return {
@@ -13,10 +13,10 @@ export default {
     }
   },
   methods: {
-    setActivePoint: function () {
+    setActivePoint: function (index) {
       let points = document.querySelectorAll('.reviews__point');
       for (let point of points) {
-        if (point.attributes.data.value == this.index) {
+        if (point.attributes.data.value == index) {
           point.classList.add('__active');
         } else {
           point.classList.remove('__active');
@@ -24,29 +24,23 @@ export default {
       }
 
     },
-    // eslint-disable-next-line no-unused-vars
     changePostPos: function () {
-      // eslint-disable-next-line no-unused-vars
-      this.activeElem = document.querySelector('.reviews__posts').childNodes; // нужна шина евентов
-
-      for (let i = 0; i < this.activeElem.length; i++) {
-        if (this.activeElem[i].attributes.data.value == this.index) { // почему то строгое сравнение всё ломает
-          this.activeElem[i].classList.add('__active');
-          this.activeElem[i].childNodes[0].classList.add('__active'); // avatar
-          this.activeElem[i].childNodes[1].classList.add('__active'); // block
-
-
-        } else { // весь код нужно вывести в reviews, чтобы потом не дублировать его в arrows
-          this.activeElem[i].classList.remove('__active');
-          this.activeElem[i].childNodes[0].classList.remove('__active'); // avatar
-          this.activeElem[i].childNodes[1].classList.remove('__active'); // block
-        }
-      }
-      this.setActivePoint();
+      // this.activeElem = document.querySelector('.reviews__posts').childNodes;
+      this.$store.commit("setElem", {sel: document.querySelector('.reviews__posts').childNodes})
+      this.$store.commit('changePostPos', this.index);
+      this.setActivePoint(this.index);
     }
   },
-  computed: {},
-  watch: {},
+  computed: {
+    curIndex() {
+      return this.$store.getters.getIndex;
+    }
+  },
+  watch: {
+    curIndex: function () {
+      this.setActivePoint(this.curIndex);
+    }
+  },
   mounted() {
     if (this.index === 1) {
       document.querySelector('.reviews__point').classList.add('__active');

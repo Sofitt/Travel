@@ -11,7 +11,7 @@
     <brands></brands>
     <subscribe></subscribe>
     <Footer></Footer>
-          <span class="Copyrights">All rights reserved@jadoo.com</span>
+    <span class="Copyrights">All rights reserved@jadoo.com</span>
   </div>
 </div>
 </template>
@@ -43,6 +43,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.Copyrights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
 
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 </style>
