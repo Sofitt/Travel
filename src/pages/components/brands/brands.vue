@@ -1,5 +1,5 @@
 <template>
-<div class="brands">
+<section class="brands">
 <!--  <brandsItem :item="item" :key="item.logo" v-for="item of brands"></brandsItem>-->
   <div class="brands__item">
     <img src="../../../assets/img/b1.png" alt="Axon airlines" class="brands__logo">
@@ -16,7 +16,7 @@
   <div class="brands__item">
     <img src="../../../assets/img/b5.png" alt="Alitalia" class="brands__logo">
   </div>
-</div>
+</section>
 </template>
 
 <script>

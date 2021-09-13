@@ -1,5 +1,5 @@
 <template>
-  <div class="selling">
+  <section class="selling">
     <h2 class="selling__title title">Top Selling</h2>
     <h3 class="selling__subtitle subtitle">Top Destinations</h3>
     <div class="selling__feature">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

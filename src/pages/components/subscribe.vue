@@ -1,5 +1,5 @@
 <template>
-  <div class="sub">
+  <section class="sub">
     <div class="sub__header">
       <div class="sub__logo">
         <img src="../../assets/img/send2.svg" alt="send icon" class="sub__logo icon">
@@ -17,7 +17,7 @@
       </label>
       </form>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

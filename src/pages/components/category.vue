@@ -1,5 +1,5 @@
 <template>
-  <div class="category">
+  <section class="category">
     <h2 class="category__title title">CATEGORY</h2>
     <h3 class="category__subtitle subtitle">We Offer Best Services</h3>
     <div class="category__feature">
@@ -36,7 +36,7 @@
         <div class="category__card target"/>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

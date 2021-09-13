@@ -1,5 +1,5 @@
 <template>
-  <div class="reviews">
+  <section class="reviews">
     <div class="reviews__leftPart">
       <div class="reviews__title title">Testimonials</div>
       <div class="reviews__subtitle subtitle">What people say <br> about Us.</div>
@@ -14,7 +14,7 @@
       <button disabled class="reviews__up" @click="changePostPos()"/>
       <button class="reviews__down" @click="changePostPos()"/>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
