@@ -58,6 +58,10 @@ export default {
     }
   },
   methods: {
+    /**
+     * Выпадающий список для смены языка.
+     * @param lang
+     */
     changeLang: function (lang) {
       if (lang === 'cur') {
         this.dropdownShow = {btn: 'display: flex; position: relative; top: 12px', icon: 'transform: translate(18px, 20px) rotate(-135deg);'};

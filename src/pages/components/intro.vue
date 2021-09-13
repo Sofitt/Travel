@@ -1,5 +1,5 @@
 <template>
-<div class="intro">
+<section class="intro">
   <div class="intro__block">
     <article class="intro__slogan">
       <h3 class="intro__slogan-title">Best Destinations around the world</h3>
@@ -9,7 +9,7 @@
       <h1 class="intro__section-title">Travel, enjoy and live a new and full life</h1>
       <p class="intro__section-subtitle">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
     </section>
-    <section class="intro__btns">
+    <div class="intro__btns">
       <a class="intro__find link">Find out more</a>
       <button class="intro__btn">
         <div class="intro__btn-play">
@@ -17,12 +17,12 @@
         </div>
         <span class="intro__btn-text">Play Demo</span>
       </button>
-    </section>
+    </div>
 
   </div>
   <div class="intro__background">
   </div>
-</div>
+</section>
 </template>
 
 <script>

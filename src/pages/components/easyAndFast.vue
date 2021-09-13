@@ -1,5 +1,5 @@
 <template>
-<div class="easy">
+<section class="easy">
   <h2 class="easy__title title">Easy and Fast</h2>
   <h3 class="easy__subtitle subtitle">Book your next trip <br> in 3 easy steps</h3>
   <div class="easy__inner">
@@ -28,7 +28,7 @@
     </div>
     <img src="../../assets/img/09.jpg" class="easy__screenApp">
   </div>
-</div>
+</section>
 </template>
 
 <script>
