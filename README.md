@@ -1,5 +1,8 @@
 # Travel
 
+![Снимок](https://user-images.githubusercontent.com/81359836/133044761-ab11b163-2091-4111-a70e-581b8ff7ab89.JPG)
+
+
 В проекте использованы следующие технологии:
 - Vue
 - Vuex
